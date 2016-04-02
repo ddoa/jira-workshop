@@ -4,7 +4,7 @@
 To be able to run Docker you need a x64 architecture (64 bits). If you don't have 64 bits system and 64 bits OS, you can install Jira [manually](MANUAL.md).
 
 ## Info
-Provides info and scripts for creating a Docker environment with Jira running for Workshop purposes. Main source for this script is https://cptactionhank.github.io/docker-atlassian-jira/. The following setup needs about 30 minutes from your time and about 1Gb diskspace.
+Provides info and scripts for creating a Docker environment with Jira running for Workshop purposes. Main source for this script is https://cptactionhank.github.io/docker-atlassian-jira/. The following setup needs about 30 minutes from your time and about 1Gb diskspace. This setup needs less manual intervention than the [manual](MANUAL.md) setup. 
 
 ## Script
 1. Install the [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
