@@ -1,10 +1,10 @@
 # Jira Workshop: Installing and setting up Jira
 
 ## Prerequisites
-To be able to run Docker you need a x64 architecture (64 bits). If you don't have 64 bits system and 64 bits OS, you can install Jira [manually](MANUAL.md).
+To be able to run Docker you need a x64 architecture (64 bits). If you don't have 64 bits system and 64 bits OS, you can install Jira [manually](MANUAL.md). On Windows (and possible other platforms) you need to [enable virtualisation](http://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/) (VT-X/AMD-V) and disable Hyper-V on Windows. 
 
 ## Info
-Provides info and scripts for creating a Docker environment with Jira running for Workshop purposes. Main source for this script is https://cptactionhank.github.io/docker-atlassian-jira/. The following setup needs about 30 minutes from your time and about 1Gb diskspace. This setup needs less manual intervention than the [manual](MANUAL.md) setup. 
+Provides info and scripts for creating a Docker environment with Jira running for Workshop purposes. Main source for this script is https://cptactionhank.github.io/docker-atlassian-jira/. The following setup needs about 30 minutes from your time and about 1Gb diskspace. This setup needs less manual intervention than the [manual](MANUAL.md) setup.
 
 ## Script
 1. Install the [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
