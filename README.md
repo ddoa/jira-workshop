@@ -1,7 +1,7 @@
-# Jira Workshop
+# Jira Workshop: Installing and setting up Jira
 
 ## Info
-Provides info and scripts for creating a Docker environment with Jira running for Workshop purposes. Main source for this script is https://cptactionhank.github.io/docker-atlassian-jira/. The following setup needs about 30 minutes from your time. 
+Provides info and scripts for creating a Docker environment with Jira running for Workshop purposes. Main source for this script is https://cptactionhank.github.io/docker-atlassian-jira/. The following setup needs about 30 minutes from your time.
 
 ## Script
 1. Install the [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
