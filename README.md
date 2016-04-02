@@ -1,5 +1,8 @@
 # Jira Workshop: Installing and setting up Jira
 
+## Prerequisites
+To be able to run Docker you need a x64 architecture (64 bits). 
+
 ## Info
 Provides info and scripts for creating a Docker environment with Jira running for Workshop purposes. Main source for this script is https://cptactionhank.github.io/docker-atlassian-jira/. The following setup needs about 30 minutes from your time.
 
@@ -22,4 +25,4 @@ Provides info and scripts for creating a Docker environment with Jira running fo
 
 9. Create a new Scrum-board with Board name and Project name "Workshop", Jira will generate a project key "WOR", that's OK. Select "Agile simplified workflow" and click "Create board".
 
-10. You're ready for the Workshop! When you're done with the workshop you can stop the docker-image with the command ```docker stop lonely_pike``` and close the Kitematic app. 
+10. You're ready for the Workshop! When you're done with the workshop you can stop the docker-image with the command ```docker stop lonely_pike``` and close the Kitematic app.
