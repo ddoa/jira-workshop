@@ -11,7 +11,7 @@ Provides info and scripts for creating a Docker environment with Jira running fo
 2. Docker comes with Kitematic. Start the Kitematic app, it will create a docker-machine with the name 'default'. From now on you can create and run docker images.
 3. Minimize the Kitematic app and let it run as a background process.
 4. Only for Linux/Mac: Open a terminal/cmd-window and run the command ```docker-machine env```. Check to see if the docker-machine has a valid name (DOCKER_MACHINE_NAME) and ip-address (DOCKER_HOST). Now run eval $(docker-machine env).
-5. Make sure you don't have any processes running that can occupy the port 8080 (or use a custom port in the following command). Open a terminal/cmd-window and :
+5. Make sure you don't have any processes running that can occupy the port 8080 (or use a custom port after the colon in the following command). Open a terminal/cmd-window and :
 
   ```docker run --detach --publish 8080:8080 cptactionhank/atlassian-jira:6.3.10```.
 
