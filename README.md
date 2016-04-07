@@ -26,4 +26,4 @@ Provides info and scripts for creating a Docker environment with Jira running fo
 
 10. Create a new Scrum-board with Board name and Project name "Workshop", Jira will generate a project key "WOR", that's OK. Select "Agile simplified workflow" and click "Create board".
 
-11. You're ready for the Workshop! When you're done with the workshop you can stop the docker-image with the command ```docker stop lonely_pike``` and close the Kitematic app.
+11. You're ready for the Workshop! When you're done with the workshop you can list the current running images with ```docker ps``` and stop the docker-image with the command ```docker stop <imagename>``` and close the Kitematic app.
