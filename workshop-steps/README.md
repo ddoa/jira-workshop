@@ -30,61 +30,48 @@
 
   > __Note:__ A task relates to a feature expressed in the language of the customer (product owner), e.g. a user story, feature of use case. In this workshop we are going to use a use case diagram to build our product backlog:
 
-  > ![Use case diagram](images/forumplugin-ucs.jpg "Use case diagram Forum Plugin")
+  ![Use case diagram](images/forumplugin-ucs.jpg "Use case diagram Forum Plugin")
 
   Suppose we're starting a project and the project team did a planning poker session:
 
-  | Name  | Forum aanmaken  | Thread aanmaken | Thread verwijderen  |
-  | ---   | ---             | ---             | --- |
-  | Rik   | 3               | 4               | 5   |
-  | Cees  | 5               | 8               | 8   |
-  | Joost | 2               | 2               | 2   |
-  | Nico  | 3               | 2               | 2   |
-  | Jur   | 8               | 10              | 8   |
+  ![Estimations](images/estimations.png "Team Estimations")
 
-  Use the Blue(-ish) "Create"-button to create 3 issues of type "Task" with the Use case title as the Summary and Description. You might have noticed the difference in the estimations of the team members. After a short discussion they agreed to take the average, but that's not a standard procedure! Take the average of the team members estimation per task as a value for the "Story Points". Leave the rest of the fields empty, _including_ the "Original Estimate" and "Remaining Estimate".
+6. Use the Blue(-ish) "Create"-button to create 3 issues of type "Task" with the Use case title as the Summary and Description. You might have noticed the difference in the estimations of the team members. After a short discussion they agreed to take the average, but that's not a standard procedure! Take the average of the team members estimation per task as a value for the "Story Points". Leave the rest of the fields empty, _including_ the "Original Estimate" and "Remaining Estimate".
 
   > __Note:__ We end up with a small product backlog that is big enough for our workshop. Normally this backlog is a lot larger and descending ordered by priority.
 
-6. After a meeting with the product owner the team agreed to build the first two tasks (_Forum aanmaken_ and _Thread aanmaken_) in the upcoming sprint. Their gut feeling (that's all you have in the start of a project) tells them it's OK to have workitems worth a total of 10 story points. Note: story points are a relative estimation and specific for the team and the project. You should not compare these points with other teams or other projects, it's like comparing apples and oranges or maybe even apples and bikes.
+7. After a meeting with the product owner the team agreed to build the first two tasks (_Forum aanmaken_ and _Thread aanmaken_) in the upcoming sprint. Their gut feeling (that's all you have in the start of a project) tells them it's OK to have workitems worth a total of 10 story points. Note: story points are a relative estimation and specific for the team and the project. You should not compare these points with other teams or other projects, it's like comparing apples and oranges or maybe even apples and bikes.
 
   Create a new Sprint (there is a "Create Sprint"-button :wink:). Drag the two tasks to Sprint 1. Do _not_ start the sprint yet. We only have two quite big tasks on our sprint backlog, that's not enough to create workitems for our team that has 5 members, so we need a different type and level of issues!
 
-7. For every task: select it in the planning board and click on the (...)-Button on the right and select "Create Sub-Task". Give every task .. subtasks:
+8. For every task: select it in the planning board and click on the (...)-Button on the right and select "Create Sub-Task". Give every task 6 subtasks:
 
-  7a. Write fully-dressed use case. Original Estimate: 1h.
+  * Write fully-dressed use case. Original Estimate: 1h.
+  * Adjust domain model (Description: includes updating the glossary and documenting analysis decisions). Original Estimate: 2h.
+  * Create technical design (Description: sequence diagram, class diagram and guiding documentation like explanation, motivation of design decisions and used design patterns). Original Estimate: 4h.
+  * Write unit-tests. Original Estimate: 3h.
+  * Implement happy flow. Original Estimate: 2h.
+  * Implement alternative flows. Original Estimate: 3h.
 
-  7b. Adjust domain model (Description: includes updating the glossary and documenting analysis decisions). Original Estimate: 2h.
-
-  7c. Create technical design (Description: sequence diagram, class diagram and guiding documentation like explanation, motivation of design decisions and used design patterns). Original Estimate: 4h.
-
-  7d. Write unit-tests. Original Estimate: 3h.
-
-  7e. Implement happy flow. Original Estimate: 2h.
-
-  7f. Implement alternative flows. Original Estimate: 3h.
-
-8. Time to start the Sprint! Go to the Plan-section of the planning board and click on "Start Sprint". Don't change the start date and end date, that's OK for now.
+9. Time to start the Sprint! Go to the Plan-section of the planning board and click on "Start Sprint". Don't change the start date and end date, that's OK for now.
 
   > __Note__: When you start the sprint before adding (sub)tasks the burndown cannot be shown: a burndown shows given a start and end-date the burn of time/effort for a set of tasks. When you start a sprint without tasks there's nothing to burn. There is an option to "burn up" (instead of "burn down") but Jira cannot create a trend line in that situation. So, first create workitems for your sprint and  second start the sprint.
 
   > __Note 2__: We have workitems worth 10 story points and 4 days. Our team has 5 members so we should have a set of workitems worth 5 * 5 d = 25 days = 200 hours. Given a productivity of 50%, the rest of the time is for meetings, planning, feedback etc.
 
-9. Ready to sprint! But wait, let's first see how our burndown look like. Click on the "Report"-button. A nice graph shows a pile of work having 14 issues with a total time of 3 days and 6 hours. Weekend days are grayed out in this report but you can modify that in the board configuration: Configuration->Working Days.
+10. Ready to sprint! But wait, let's first see how our burndown look like. Click on the "Report"-button. A nice graph shows a pile of work having 14 issues with a total time of 3 days and 6 hours. Weekend days are grayed out in this report but you can modify that in the board configuration: Configuration->Working Days.
 
-10. Now we are really really ready to sprint :grin:. Drag "Write fully-dressed use case" to "In progress", next drag it to "To review". Start dragging the item to "Done", two sub-statuses appear: Resolved and Closed. We use Closed in this workshop, if you want to know more visit [Atlassian Answers](https://answers.atlassian.com/questions/54749/resolved-vs-closed-what-is-the-purpose-of-two-final-states-in-the-default-workflow). The remaining estimate is still 1h, we forgot to log our work! Drag the item back to "To Review", click the "Log Work" link and set the "Time Spent" field to 1h. Next, drag the item to Done.
+11. Now we are really really ready to sprint :grin:. Drag "Write fully-dressed use case" to "In progress", next drag it to "To review". Start dragging the item to "Done", two sub-statuses appear: Resolved and Closed. We use Closed in this workshop, if you want to know more visit [Atlassian Answers](https://answers.atlassian.com/questions/54749/resolved-vs-closed-what-is-the-purpose-of-two-final-states-in-the-default-workflow). The remaining estimate is still 1h, we forgot to log our work! Drag the item back to "To Review", click the "Log Work" link and set the "Time Spent" field to 1h. Next, drag the item to Done.
 
-11. Pay a short visit to the Reporting section and notice that the Remaining values are decreasing and Time Spent is increasing. A bit faster than expected but hey, we doing a workshop, time = money :wink:.
+12. Pay a short visit to the Reporting section and notice that the Remaining values are decreasing and Time Spent is increasing. A bit faster than expected but hey, we doing a workshop, time = money :wink:.
 
   > __Note:__ In real projects time goes a lot slower but take your time to log your work: at least at the end of your work day but even better, every time you take a short break or when you have a major status improvement for your task.
 
-12. Drag all remaining sub tasks to "In progress". When adjusting the Domain Model the assigned developer ends up in a long discussion with his team. Log 2 hours of work for this workitem, put "Team discussion" in the "Work Description"-box  and use the existing estimate of 2 hours for the "Remaining Estimate". Next, log 2 hours of work and drag the workitem to Done.
+13. Drag all remaining sub tasks to "In progress". When adjusting the Domain Model the assigned developer ends up in a long discussion with his team. Log 2 hours of work for this workitem, put "Team discussion" in the "Work Description"-box  and use the existing estimate of 2 hours for the "Remaining Estimate". Next, log 2 hours of work and drag the workitem to Done.
 
   > __Note:__: In real projects the burndown shows a spike in the graph due to the re-estimation of the Domain Model.
 
-13. Drag all sub tasks for one of the tasks to Done and set the Remaining Estimate to 0h. A dialog appears when the last sub task is dragged to Done: Update Parent Issue. Select "Closed" for the transition value. Repeat this steps for all sub tasks for the remaining task.
-
-14. We can now complete the Sprint. Navigate to "Work"-mode and click on the small triangle next to the name of the sprint in the upper left corner. Click on "Complete Sprint". The Sprint Report appears, but for a short workshop it does not contain any useful information.
+14. Drag all sub tasks for one of the tasks to Done and set the Remaining Estimate to 0h. A dialog appears when the last sub task is dragged to Done: Update Parent Issue. Select "Closed" for the transition value. Repeat this steps for all sub tasks for the remaining task. We can now complete the Sprint. Navigate to "Work"-mode and click on the small triangle next to the name of the sprint in the upper left corner. Click on "Complete Sprint". The Sprint Report appears, but for a short workshop it does not contain any useful information.
 
 15. You've learned how to create and manage a Jira Agile board and to use it as a product backlog and sprint backlog.
 
